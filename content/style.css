@@ -1,0 +1,137 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+body {
+	margin: 0;
+	padding-bottom: 2em;
+	width: 100%;
+	overflow-x: hidden;
+	
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 1.2em;
+	line-height: 1.2em;
+	color: #222;
+}
+@media (max-width: 900px) {
+	body {
+		font-size: 1em;
+	}
+}
+
+
+h1 {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 0 0 1em 0;
+}
+h2 {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 0 0 0.5em 0;
+}
+p {
+	text-align: justify;
+}
+img, video {
+	margin: 0.25em 0em;
+	max-width: calc(min(100%, 800px));
+}
+iframe {
+	margin: 0.25em 0em;
+	width: calc(min(100%, 800px));
+	aspect-ratio: 16 / 9;
+}
+table {
+	margin: 0;
+	border-collapse: separate;
+	border-spacing: 0 0.5em;
+}
+table tr td:first-child {
+	padding-right: 1em;
+	vertical-align: top;
+}
+sup {
+	line-height: 0;
+}
+
+
+
+
+.cv_table  {
+	margin: 0;
+	line-height: 1.5em;
+	border-collapse: separate;
+	border-spacing: 0 0.5em;
+}
+.cv_table tr td:first-child {
+	vertical-align: top;
+	width: 10em;
+}
+.cv_table tr td p {
+	text-indent: -2em;
+	padding-left: 2em;
+	margin: 0;
+}
+.cv_table tr td ul {
+	margin: 0;
+}
+@media (max-width: 900px) {
+	.cv_table tr td:first-child {
+		width: 6em;
+	}
+	.cv_table tr td p {
+		text-align: left;
+	}
+}
+
+
+.projects {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+	gap: 1em;
+}
+.projects_button {
+	height: 12em;
+	background-size: cover;
+	background-position: center;
+}
+.projects_button a {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+	backdrop-filter: brightness(50%);
+	transition: backdrop-filter 0.4s;
+	cursor: pointer;
+}
+.projects_button a:hover {
+	backdrop-filter: brightness(80%);
+}
+.projects_button a:active {
+	filter: brightness(115%);
+}
+.projects_button a p {
+	margin: 2em;
+	color: #FFF;
+	text-shadow: 0 0 0.2em #000;
+	font-weight: bold;
+	font-size: 1.2em;
+	text-align: center;
+	cursor: pointer;
+}
+.star_gold, .star_silver, .star_bronze {
+	display: inline;
+	height: 0.9em;
+	margin: 0;
+	padding-right: 0.2em;
+}
+.star_gold {
+	content: url("resources/projects_button/star_gold.png");
+}
+.star_silver {
+	content: url("resources/projects_button/star_silver.png");
+}
+.star_bronze {
+	content: url("resources/projects_button/star_bronze.png");
+}
+

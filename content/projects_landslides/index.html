@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="../style.css">
+	<title>Projects - Simulation of Landslides and Avalances (2012-2014)</title>
+</head>
+
+<body>
+	
+	<h1>Simulation of Landslides and Avalances (2012-2014)</h1>
+	
+	<h2>Matriculation Project (2012)</h2>
+	<table>
+		<tr><td>Download:</td><td><a href="matriculation_thesis.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> matriculation_thesis.pdf</a></td></tr>
+	</table>
+	<p>
+		On 28 December 2011 a landslide of 1.5 million cubic meters broke away from the summit of Piz Cengalo in the south of Graubünden, Switzerland. This was around the time I was finishing high school and thinking about a matriculation project. I set my mind on simulating that landslide and any other landslide or avalanche I could think of. To do that I wanted to code everything myself with C++ and DirectX9, as I was told those were the professional tools. The only problem was that I had barely any experience in both of them. My supervisor Alberto Maraffio, who was a physics teacher with no programming experience, couldn't advise much either in that regard. Nevertheless, he helped me get my hands on a digital height model of Switzerland from the federal office of topography, which didn't come cheap at the time. So, my journey began.
+	</p>
+	<img src="dev1.png">
+	<img src="dev2.png">
+	<img src="dev3.png">
+	<img src="dev4.png">
+	<p>
+		It took me about 2 months just to get a mountain rendered on screen. Time during which I probably didn't do a lot of other schoolwork. Then I did the physics simulation, where I went for stones, modelled as simple point masses (thinking that I’d upgrade later on). These exhibited semi-elastic collisions when impacting the ground and friction when gliding along the ground, but did not interact otherwise.
+	</p>
+	<video controls loop><source src="dev5.webm" type="video/webm"></video>
+	<video controls loop><source src="dev6.webm" type="video/webm"></video>
+	<p>
+		Up until that point I had used a console built into the program to set all kinds of parameters and call functions. This was getting tedious really fast, so I had to implement an UI to make my life easier (Win32 API).
+	</p>
+	<img src="dev7.png">
+	<p>
+		At this point my time was already up and I had to submit my project, although I was far from out of ideas on how to proceed. As a last hurrah I loaded up the program and placed 700'000 stones on the Piz Cengalo. The simulation took an entire two hours to complete, but the results look admittedly pretty cool!
+	</p>
+	<iframe src="https://www.youtube.com/embed/jYdnOEBS3LQ" frameborder="0" allowfullscreen ></iframe>
+	<p>
+		To get the starting location of the landslide right and to correctly tune the coefficients of friction & restitution (and because I like to hike), I went on a trip with my family to see the aftermath of the landslide myself. The pictures of that trip are shown here below. Looking back at the simulation now, I did get the starting location slightly wrong, with the real landslide going down only to the left and not splitting up at all.
+	</p>
+	<img src="pic1.jpg">
+	<img src="pic2.jpg">
+	<img src="pic3.jpg">
+	<img src="pic4.jpg">
+	<img src="pic5.jpg">
+	<img src="pic6.jpg">
+	<p>
+		While I am happy with the outcome of my matriculation project, it's also true that it wasn't always smooth sailing. Especially the vector math in the physics simulation caused a lot of head scratching. Most of the times the landslide just disappeared when I made a mistake, but sometimes the effects were quite comical.
+	</p>
+	<video controls loop><source src="dev8.webm" type="video/webm"></video>
+	<br><br>
+
+	
+	<!--
+	<h2>Geo-Viewer (2012)</h2>
+	<p>
+		As a thank you for my high school (Bündner Kantonsschule Chur) buying me the digital height model and satellite images, I made a second version of my program, stripping out all the physics and leaving back only a viewer. I would upload that program here since now the dataset is free, but the disk size is still huge and Google Earth does a much better job anyways. So, all you get is a short clip of what the Matterhorn would look like using my geo-viewer.
+	</p>
+	<iframe src="https://www.youtube.com/embed/5KnftOjughY" frameborder="0" allowfullscreen ></iframe>
+	<br><br><br>
+	-->
+
+	<h2>Poster Presentation ETH Zürich (2013)</h2>
+	<p>
+		A few months later I was invited to a poster presentation for matriculation projects at ETH Zürich. I showed up with a big A0 poster that I made just after discovering Adobe Illustrator's Image Trace tool, and with my little RaspberryPi box computer to show a video of the simulation. No pictures of me in that event survived, but I still have the poster and the Pi-Box (see <i>portable computer</i> projects).
+	</p>
+	<img src="poster.png">
+	<table>
+		<tr><td>Download:</td><td><a href="matriculation_poster.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> matriculation_poster.pdf</a></td></tr>
+	</table>
+	<br><br>
+
+	<h2>Project 2 (2014)</h2>
+	<p>
+		After submitting my thesis, I moved on from this project. I went on to start my study in human medicine at the University of Fribourg, before painfully realizing that it was not the right thing for me. Then I started studying mechanical engineering at ETH Zürich, but failed to pass the first year-end exam. To this day I dislike how they treat new students as if they must have a pocket calculator built into their brain. Anyways, I decided to redo the whole year. This meant that I had quite a bit of free time on my hands, so I decided to pick my landslide simulations back up. I started coding from scratch to fix my old mistakes and called this new program  <i>Project 2</i>.
+	</p>
+	<img src="project2.png">
+	<p>
+		In this program I intended to build everything around dodecahedral voxels, simulating interactions between voxels and clusters of voxels breaking apart. Even the ground was supposed to be made from voxels, so that a landslide could rip up and carry with it parts of the ground. It was a very ambitious project, and I did get pretty far, but before reaching my goal the year was already over. On the second try I did pass my university exams. Then the second year started, and I was once again under such pressure that I couldn't think about continuing this project. What remains are 5 short development log videos that I made during that time.
+	</p>
+	<iframe src="https://www.youtube.com/embed/JAv7J8axg6Q" frameborder="0" allowfullscreen></iframe>
+	<iframe src="https://www.youtube.com/embed/pfyqw17zeEE" frameborder="0" allowfullscreen></iframe>
+	<iframe src="https://www.youtube.com/embed/6-XpqZq4C1Q" frameborder="0" allowfullscreen></iframe>
+	<iframe src="https://www.youtube.com/embed/R1Cy_-cj7ec" frameborder="0" allowfullscreen></iframe>
+	<iframe src="https://www.youtube.com/embed/S078MlFpR9Y" frameborder="0" allowfullscreen></iframe>
+
+</body>
+
+<script src="../script.js"></script>
+</html>
