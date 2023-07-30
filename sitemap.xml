@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url><priority>0.8</priority><loc>https://marcoruggia.ch/home?projects</loc></url>
+<url><priority>0.6</priority><loc>https://marcoruggia.ch/home?publications</loc></url>
+<url><priority>0.6</priority><loc>https://marcoruggia.ch/home?about</loc></url>
+
+<url><priority>0.4</priority><loc>https://marcoruggia.ch/home?projects_momav</loc></url>
+<url><priority>0.3</priority><loc>https://marcoruggia.ch/home?projects_qdd_crl</loc></url>
+<url><priority>0.3</priority><loc>https://marcoruggia.ch/home?projects_wood_model</loc></url>
+<url><priority>0.4</priority><loc>https://marcoruggia.ch/home?projects_layouter</loc></url>
+<url><priority>0.4</priority><loc>https://marcoruggia.ch/home?projects_traj_opt</loc></url>
+<url><priority>0.3</priority><loc>https://marcoruggia.ch/home?projects_sherline_mod</loc></url>
+<url><priority>0.3</priority><loc>https://marcoruggia.ch/home?projects_uav_glider</loc></url>
+<url><priority>0.3</priority><loc>https://marcoruggia.ch/home?projects_rotorheads</loc></url>
+<url><priority>0.3</priority><loc>https://marcoruggia.ch/home?projects_map_widget</loc></url>
+<url><priority>0.3</priority><loc>https://marcoruggia.ch/home?projects_pcd_tests</loc></url>
+<url><priority>0.4</priority><loc>https://marcoruggia.ch/home?projects_aoa_sensors</loc></url>
+<url><priority>0.3</priority><loc>https://marcoruggia.ch/home?projects_fpv_flyers</loc></url>
+<url><priority>0.3</priority><loc>https://marcoruggia.ch/home?projects_workshop</loc></url>
+<url><priority>0.3</priority><loc>https://marcoruggia.ch/home?projects_group_proj</loc></url>
+<url><priority>0.3</priority><loc>https://marcoruggia.ch/home?projects_notes</loc></url>
+<url><priority>0.3</priority><loc>https://marcoruggia.ch/home?projects_computers</loc></url>
+<url><priority>0.4</priority><loc>https://marcoruggia.ch/home?projects_landslides</loc></url>
+<url><priority>0.3</priority><loc>https://marcoruggia.ch/home?projects_websites</loc></url>
+<url><priority>0.3</priority><loc>https://marcoruggia.ch/home?projects_games</loc></url>
+<url><priority>0.3</priority><loc>https://marcoruggia.ch/home?projects_software</loc></url>
+
+</urlset>
