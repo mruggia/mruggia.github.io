@@ -1,6 +1,6 @@
 
 function navigate(name, push) {
-	const menus = ["projects", "publications", "about"];
+	const menus = ["projects", "publications", "education", "contact"];
 	var menu = name.match(/^([^_]*)_?.*/); menu = menu[1];
 
 	if (push) {
