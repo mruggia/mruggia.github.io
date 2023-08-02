@@ -20,8 +20,8 @@ function navigate(name, push) {
 		}
 	}
 
-	//if (!(name === menu)) { document.getElementById("iframe_anchor").scrollIntoView({ behavior: 'smooth', block: 'start'}); }
-	if ( typeof navigate.ran != 'undefined' ) { document.getElementById("iframe_anchor").scrollIntoView({ behavior: 'smooth', block: 'start'}); } navigate.ran = true;
+	if (!(name === menu)) { document.getElementById("iframe_anchor").scrollIntoView({ behavior: 'smooth', block: 'start'}); }
+	//if ( typeof navigate.ran != 'undefined' ) { document.getElementById("iframe_anchor").scrollIntoView({ behavior: 'smooth', block: 'start'}); } navigate.ran = true;
 	setTimeout( function() { document.getElementById("iframe").contentWindow.location.replace( "/content/"+name ); }, 200);
 }
 
