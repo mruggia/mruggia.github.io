@@ -136,3 +136,8 @@ sup {
 	content: url("resources/projects_button/star_bronze.png");
 }
 
+.contact_img {
+	width: 3em;
+	padding-right: 1em;
+	cursor: pointer;
+}
