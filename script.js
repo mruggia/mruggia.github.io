@@ -1,4 +1,16 @@
 
+// Google tag (gtag.js)
+var imported = document.createElement('script');
+imported.async = true;
+imported.src = 'https://www.googletagmanager.com/gtag/js?id=G-QW9M1EJB20';
+document.head.appendChild(imported);
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-QW9M1EJB20');
+
+
+
 function navigate(name, push) {
 	const menus = ["projects", "blog", "publications", "education", "contact"];
 	var menu = name.match(/^([^_]*)_?.*/); menu = menu[1];
