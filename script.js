@@ -12,7 +12,7 @@ gtag('config', 'G-QW9M1EJB20');
 
 
 function navigate(name, push) {
-	const menus = ["projects", "blog", "publications", "education", "contact"];
+	const menus = ["projects", "publications", "education", "contact"];
 	var menu = name.match(/^([^_]*)_?.*/); menu = menu[1];
 
 	if (push) {
