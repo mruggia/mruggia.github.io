@@ -11,16 +11,35 @@
 	
 	<h1>Marco's Omnidirectional Micro Aerial Vehicle, MOMAV (2022-2023)</h1>
 	<img src="momav.jpg">
-	<p>
-		MOMAV is my own version of an omnidirectional drone, meaning one that can independently translate and rotate. I see it as an evolution of the omnidirectional drones built by the Autonomous Systems Lab, with which I did my master thesis. This project is still ongoing, so I don't have too much to say, but here below is a video of one of its first flights (after a bit of PID tuning) filmed at the University of Applied Sciences of the Grisons. In the video the attitude is controlled to be fixed, and I control the translation with a RC transmitter.
-	</p>
-	<iframe src="https://www.youtube.com/embed/ktEVs36Qcug" frameborder="0" allowfullscreen></iframe>
-	<p>
-		One year, a 9 month excursion to the Netherlands, and 55 more test flights later, this is the current state of MOMAV. Still not quite finished, but getting there!
-	</p>
 	<iframe src="https://www.youtube.com/embed/nP4y8wDFx2w" frameborder="0" allowfullscreen></iframe>
-	<br><br><br>
-
+	<p>
+		MOMAV is my own version of an omnidirectional drone, meaning one that can independently translate and rotate. I see it as an evolution of the omnidirectional drones built by the Autonomous Systems Lab at ETH Zürich, with whom I did my master thesis. This project was entirely self-funded (thanks in big part to my family) and executed in my free time after I left the lab. Down below is a manuscript describing the novel aspects of the drone, as well as various test results. This manuscript was intended for the Robotics Science and Systems RSS 2024 conference, but it was rejected as one anonymous reviewer found that the advantages of the novel control allocation method were not clearly shown. 
+	</p>
+	<table>
+		<tr><td>Manuscript:</td><td><a href="https://www.researchgate.net/profile/Marco-Ruggia/publication/380896796_MOMAV_A_highly_symmetrical_fully-actuated_multirotor_drone_using_SQP_based_control_allocation/links/6654391422a7f16b4f4ed2ff/MOMAV-A-highly-symmetrical-fully-actuated-multirotor-drone-using-SQP-based-control-allocation.pdf" target="_blank"><i class="fa fa-file-pdf-o">&nbsp;&nbsp;</i>momav_manuscript.pdf</a></td></tr>
+		<tr><td>Codebase:</td><td><a href="https://github.com/mruggia/momav" target="_blank"><i class="fa fa-external-link">&nbsp;</i>github.com/mruggia/momav</a></td></tr>
+	</table>
+	<br><br>
+	
+	<h2>Unpublished Manuscript</h2>
+	<img src="momav-1.svg" style="transform: scale(1.18); width: 100%; max-width: 100%; margin: calc(100vw*60/1200) 0 calc(100vw*18/1200) 0;"/><hr>
+	<img src="momav-2.svg" style="transform: scale(1.18); width: 100%; max-width: 100%; margin: calc(100vw*58/1200) 0 calc(100vw*27/1200) 0;"/><hr>
+	<img src="momav-3.svg" style="transform: scale(1.18); width: 100%; max-width: 100%; margin: calc(100vw*58/1200) 0 calc(100vw*27/1200) 0;"/><hr>
+	<img src="momav-4.svg" style="transform: scale(1.18); width: 100%; max-width: 100%; margin: calc(100vw*58/1200) 0 calc(100vw*27/1200) 0;"/><hr>
+	<img src="momav-5.svg" style="transform: scale(1.18); width: 100%; max-width: 100%; margin: calc(100vw*58/1200) 0 calc(100vw*27/1200) 0;"/><hr>
+	<img src="momav-6.svg" style="transform: scale(1.18); width: 100%; max-width: 100%; margin: calc(100vw*49/1200) 0 calc(100vw*27/1200) 0;"/><hr>
+	<img src="momav-7.svg" style="transform: scale(1.18); width: 100%; max-width: 100%; margin: calc(100vw*24/1200) 0 calc(100vw*27/1200) 0;"/><hr>
+	<img src="momav-8.svg" style="transform: scale(1.18); width: 100%; max-width: 100%; margin: calc(100vw*49/1200) 0 calc(100vw*28/1200) 0;"/><hr>
+	<img src="momav-9.svg" style="transform: scale(1.18); width: 100%; max-width: 100%; margin: calc(100vw*58/1200) 0 calc(100vw*28/1200) 0;"/><hr>
+	<img src="momav-10.svg"style="transform: scale(1.18); width: 100%; max-width: 100%; margin: calc(100vw*56/1200) 0 calc(100vw*28/1200) 0;"/><hr>
+	<img src="momav-11.svg"style="transform: scale(1.18); width: 100%; max-width: 100%; margin: calc(100vw*48/1200) 0 calc(100vw*14/1200) 0;"/><hr>
+	<img src="momav-12.svg"style="transform: scale(1.18); width: 100%; max-width: 100%; margin: calc(100vw*49/1200) 0 calc(100vw*20/1200) 0;"/><hr><br><br><br>
+	
+	<h2>Controller Structure</h2><br><br>
+	<img src="notes-1.svg" style="transform: scale(1.06); width: 100%; max-width: 100%; margin: 0 0 calc(100vw*90/1200) 0;"/>
+	<img src="notes-2.svg" style="transform: scale(1.06); width: 100%; max-width: 100%; margin: 0 0 calc(100vw*25/1200) 0;"/>
+	<img src="notes-3.svg" style="transform: scale(1.06); width: 100%; max-width: 100%; margin: 0 0 calc(100vw*40/1200) 0;"/>
+	
 </body>
 
 <script src="../script.js"></script>

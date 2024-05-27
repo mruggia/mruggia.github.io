@@ -6,6 +6,8 @@
 <url><priority>0.6</priority><loc>https://marcoruggia.ch/home?education</loc></url>
 <url><priority>0.7</priority><loc>https://marcoruggia.ch/home?contact</loc></url>
 
+<url><priority>0.4</priority><loc>https://marcoruggia.ch/home?projects_flifo</loc></url>
+<url><priority>0.4</priority><loc>https://marcoruggia.ch/home?projects_livia</loc></url>
 <url><priority>0.3</priority><loc>https://marcoruggia.ch/home?projects_fhgr</loc></url>
 <url><priority>0.4</priority><loc>https://marcoruggia.ch/home?projects_momav</loc></url>
 <url><priority>0.3</priority><loc>https://marcoruggia.ch/home?projects_qdd_crl</loc></url>
