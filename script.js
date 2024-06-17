@@ -29,7 +29,6 @@ function navigate(name, push) {
 	}
 	navigate.ran = true;
 
-
 	setTimeout( function() { document.getElementById("iframe").contentWindow.location.replace( "/content/"+name ); }, 200);
 }
 
