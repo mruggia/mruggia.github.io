@@ -16,7 +16,7 @@
 	</p>
 	<br>
 	
-	<h2>Land- and Water-based Robotics (Fall Semester 2023)</h2>
+	<h2>Land- and water-based robotics (Fall semester 2023)</h2>
 	<p>
 	The very first course i ever gave was an elective course on "Land- and Water-based Robotics" for a bachelor's degree in "Mobile Robotics". It was a verry challenging one, as it was the very first time it would be held and there was no preexisting material to draw from. Thanks to the advice and trust of my colleagues and thanks to a pretty great group of students, everything went pretty smoothly!
 	</p>
@@ -41,12 +41,37 @@
 	ABEM: Levi Columberg, Ramona Ferri, Micha Gelencsér, Roman Hanselmann, Dominic Moser
 	<br><br><br>
 	
-	<h2>Robotics and Automation (Spring Semester 2024)</h2>
+	<h2>Robotics and automation (Spring semester 2024)</h2>
 	<p>
-		In progress!
+		I inherited this course from a part-time lecturer who left to work full-time in industry. Although, I did end up modify his material quite a bit to better match how I myself would have liked to be taught. The course covers the various intricacies of how industrial robots manage to move where they're supposed to go. My final goal was to get everyone to write a python program, without any libraries except NumPy, that could move the tool of a 6 axis industrial robot from an arbitrary position/orientation to any other position/orientation. A very difficult problem, that covers a lot of interesting subproblems with many useful applications.
+	</p>
+	<p>
+		After getting a rough overview, we started by manually solving this problem for a simple 3 axis 2D industrial robot. While this is rather easy, it offers a good reference to better understand the sometimes-confusing steps needed to solve the 6 axis 3D case. Namely, we looked at the forward/inverse kinematics and differential kinematics, as well as ways to deal with their edge cases.
+	</p>
+	<img src="2d_sketch.png">
+	<p>
+		Next we needed to get some tools to be able to tackle the 6 axis robot. This part was the most tricky for me, because it's difficult to convince people of the usefulness of a tool while they try to understand how it works. So, we looked at various ways to describe coordinates, orientations, velocities and rotational velocities, as well as every way to convert between them. Homogeneous coordinates were the last piece in the toolbox we needed to proceed.
+	</p>
+	<img src="coord_transform.png">
+	<p>
+		Then the big coding challenge started. I provided a visualization of the 6 axis robot in python, and people implemented the algorithms needed to move the robot to its target position/orientation, similarly to how they already did for the 3 axis robot. At every intermediate step, the visualization could then be used as validation. Although, that aspect could still use some polish from my side.
+	</p>
+	<img src="3d_sketch.png">
+	<p>
+		Finally, we landed on a program that could move this 6 axis industrial robot from anywhere to anywhere else. We could also use this program to look into how things go wrong when edge cases are encountered.
+	</p>
+	<video controls loop><source src="ur5_animation.mp4"></video>
+	<p>
+		The feedback I got was overall very positive :) Although it is true that I sometimes made largeish jumps in logic or forgot to reference my common thread. But luckily I was made aware of those instances in time, so everything worked out fine! Here below is a sample lecture about position/orientation descriptions, using my MOMAV drone as an example application and as the topic of the following exercise. The language i speak there is Swiss German by the way.
+	</p>
+	<iframe src="https://www.youtube.com/embed/F3uPsT0MSiw" frameborder="0" allowfullscreen></iframe>
+	<br><br><br>
+	
+	<h2>Land- and water-based robotics (Fall semester 2024)</h2>
+	<p>
+		Work in progress!
 	</p>
 	
-
 </body>
 
 <script src="../script.js"></script>
