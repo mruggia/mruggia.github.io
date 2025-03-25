@@ -4,19 +4,19 @@
 <head>
 	<meta charset="UTF-8" />
 	<link rel="stylesheet" href="../style.css">
-	<title>Projects - BCN3D SigmaX R17 3D Printer Mods (2025)</title>
+	<title>Projects - 3D Printer Mods for BCN3D SigmaX (2025)</title>
 </head>
 
 <body>
 	
-	<h1>Projects - BCN3D SigmaX R17 3D Printer Mods (2025)</h1>
+	<h1>Projects - 3D Printer Mods for BCN3D SigmaX (2025)</h1>
 	<img src="beforeafter.jpg">
 
 	<p>
-		In 2019 my parents helped me buy a secondhand 3D printer, the BCN3D SigmaX R17. On paper it's a great printer with a huge 420x300x200mm build volume and independent dual extruders (IDEX), letting it switch between two filaments extremely quickly e.g. for printing with soluble supports. It has served me great over the years, but by 2025 it has become technologically outdated and many flaws are apparent. It still uses a bowden-type drive that's bad at dealing with soft filaments, and hotendes with a strong tendency to clogg. It has a glass print bed (without automatic bed leveling) that regularly leads to prints either adhering too well or not at all. And not to speak of the very expensive replacement parts in case anything break. But worse of all, the printer has a buggy firmware/slicer, which regularly freezes mid-print, crashes into the print, or otherwise messes up the print.
+		In 2019 my parents helped me buy a second-hand 3D printer, the BCN3D SigmaX R17. On paper it's a great printer with a huge 420x300x200mm build volume and independent dual extruders (IDEX), letting it switch between two filaments extremely quickly e.g. for printing with soluble supports. It has served me great over the years, but by 2025 it has become technologically outdated, and many flaws are apparent. It still uses a bowden-type drive that's bad at dealing with soft filaments, and hotends with a strong tendency to clog. It has a glass print bed (without automatic bed leveling) that regularly leads to prints either adhering too well or not at all. And not to speak of the very expensive replacement parts in case anything breaks. But worse of all, the printer has a buggy firmware/slicer, which regularly freezes mid-print, crashes into the print, or otherwise messes up the print.
 	</p>
 	<p>
-		In this state the printer was unreliable and very frustrating to work with. So, it was time to replace it. Turns out that my whishlist for a new printer is pretty long and difficult to meet at a decent pricepoint. Since the frame and mechanical components of the SigmaX are of very good quality I instead decided to upgrade just about everything else. These upgrades are documented here.
+		In this state the printer was unreliable and very frustrating to work with. So, it was time to replace it. Turns out that my whish list for a new printer is pretty long and difficult to meet at a decent price point. Since the frame and mechanical components of the SigmaX are of very good quality I instead decided to upgrade just about everything else. These upgrades are documented here.
 	</p>
 	<img src="labels1.jpg">
 	<img src="labels2.jpg">
@@ -26,13 +26,13 @@
 			The toolhead of the Voron v0.2 3D printer is a perfect fit, as it is compatible with many common extruders and hotends, while being only 54mm wide.
 		</li>
 		<li><b>Bondtec LGX Lite PRO extruder</b>: 
-			This small direct-drive extruder replaces the previously installed bowden-drive extruder, enabling the printer to print soft filaments without stringing. Due to its much larger drive wheels it is also far less likely to mangle the filament.
+			This small direct-drive extruder replaces the previously installed bowden-drive extruder, enabling the printer to print soft filaments without stringing. Due to its much larger drive wheels, it is also far less likely to mangle the filament.
 		</li>
 		<li><b>BTT EBB SB2209 USB controller</b>: 
 			This controller board connects each extruder to the main controller trough a single USB cable, massively simplifying wiring. It also features an accelerometer, so that input shaping can be used.
 		</li>
 		<li><b>E3D PZ Probe</b>: 
-			A piezoelectric probe is installed for bed leveling. It measures the force spike when gently "crashing" the nozzle into the printbed to determine the distance between the two. This technology is vastly superior to switch based, optical, magnetic or inductive sensors, as it uses the actual nozzle to measure without requiring a high contact force. This way there is no need to worry about manual recalibration when swapping the nozzle.
+			A piezoelectric probe is installed for bed leveling. It measures the force spike when gently "crashing" the nozzle into the print bed to determine the distance between the two. This technology is vastly superior to switch based, optical, magnetic or inductive sensors, as it uses the actual nozzle to measure without requiring a high contact force. This way there is no need to worry about manual recalibration when swapping the nozzle.
 		</li>
 		<li><b>E3D Revo nozzle and heater</b>: 
 			The Revo hotend system features a 60W heater and a vast array of nozzles, from 0.15mm to 1.4mm, that are very easy to swap. I myself went with a set of 0.25mm, 0.4mm and 1.0mm nozzles, with the last two being of the hardened high-flow variety, used for large/quick prints with challenging materials.
@@ -47,7 +47,7 @@
 			The borosilicate glass bed was replaced with a magnetically attached coated spring steel bed, that enables easy part removal. I have one bed with a PEI coating for most materials, and one with a special coating specifically for PA/PC from BuildTak.
 		</li>
 		<li><b>BTT SFS V2.0 filament sensor</b>: 
-			This filament sensor can not only detect filament runout, but it can also detect filament jams by means of an idler wheel attached to an encoder. Thanks to it I'm much more comfortable in leaving the printer unatended for long durations.
+			This filament sensor can not only detect filament runout, but it can also detect filament jams by means of an idler wheel attached to an encoder. Thanks to it I'm much more comfortable in leaving the printer unattended for long durations.
 		</li>
 		<li><b>Generic webcam</b>: 
 			In case something still goes wrong I installed a webcam, so that I can regularly check in on the prints and abort them, even when I'm not home.
@@ -64,16 +64,16 @@
 	</ol>
 	
 	<p>
-		Besides customizing the printer itself, I also had to heavily customized the printer configuration files, as IDEX printers are not very common in Klipper. This included custom start/end gcode, custom toolchange routines, and custom filament change routines. The last of which was pretty challenging, as I wanted the printer to continue printing until the filament ran out at the extruder, which is ~80cm from the filament switch/encoder. 
+		Besides customizing the printer itself, I also had to heavily customized the printer configuration files, as IDEX printers are not very common in Klipper. This included custom start/end G-code, custom tool change routines, and custom filament change routines. The last of which was challenging, as I wanted the printer to continue printing until the filament ran out at the extruder, which is ~80cm from the filament switch/encoder. 
 	</p>
 	<p>
-		I picked OrcaSlice as a slicer because it seems well supported and frequently updated with new features. However I did have one big pet peeve with it. When using user-defined printers, common settings are not synced between variants. So, if I wanted to change a setting for all nozzles, or for all layer heights, or for all material families, I would have to do it for each one individually. Incredibly cumbersome. Preinstalled printers in OrcaSlicer do however have the ability to heredit settings from common sources. So I went to great lengths to define my printer as one of these.
+		I picked OrcaSlice as a slicer because it seems well supported and frequently updated with new features. However, I did have one big pet peeve with it. When using user-defined printers, common settings are not synced between variants. So, if I wanted to change a setting for all nozzles, or for all layer heights, or for all material families, I would have to do it for each one individually. Incredibly cumbersome. Preinstalled printers in OrcaSlicer do however have the ability to heredit settings from common sources. So, I went to great lengths to define my printer as one of these.
 	</p>
 	<p>
 		Both my Klipper configuration as well as my OrcaSlicer profiles are available on <a href="https://github.com/mruggia/sigmaz" target="_blank">github.com/mruggia/sigmaz</a>
 	</p>
 	<p>
-		Currently there are still a few shortcommings of the upgraded printer that I wasn't able to address. With the upgrade I lost about 50mm in Y-travel, which could be gained back by moving the Y-axis stepper out of the way. Harder to solve is the problem of the large-ish moving mass, which could be addressed with a CoreXY pulley arrangement, but since ringing is barely noticeable this major upgrade is postponed indefinetly. Also postponed is support for very high temperature filaments like PEEK, as many parts of the printer can't withstand the necessary chamber temperature.
+		Currently there are still a few shortcomings of the upgraded printer that I wasn't able to address. With the upgrade I lost about 50mm in Y-travel, which could be gained back by moving the Y-axis stepper out of the way. Harder to solve is the problem of the largeish moving mass, which could be addressed with a CoreXY pulley arrangement, but since ringing is barely noticeable this major upgrade is postponed indefinitely. Also postponed is support for very high temperature filaments like PEEK, as many parts of the printer can't withstand the necessary chamber temperature.
 	</p>
 	<br>
 	
