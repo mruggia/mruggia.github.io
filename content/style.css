@@ -127,13 +127,13 @@ sup {
 	padding-right: 0.2em;
 }
 .star_gold {
-	content: url("resources/projects_button/star_gold.png");
+	content: url("projects/star_gold.png");
 }
 .star_silver {
-	content: url("resources/projects_button/star_silver.png");
+	content: url("projects/star_silver.png");
 }
 .star_bronze {
-	content: url("resources/projects_button/star_bronze.png");
+	content: url("projects/star_bronze.png");
 }
 
 .contact_img {
