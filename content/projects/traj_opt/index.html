@@ -9,7 +9,9 @@
 
 <body>
 	
-	<h1>Trajectory Optimization Methods for Implicit Time-Lag Systems (2021)</h1>
+	<h1>Implicit Trajectory Optimization Methods (2021)</h1>
+	<div class='page_date'>Created: 28.7.2023</div>
+	
 	<p>
 		For my semester thesis at ETH Zürich I tried myself at numerical methods with the Computational Robotics Lab (CRL), ETH Zürich. PhD candidate Simon Zimmermann was working on trajectory optimization methods tailored for FEA derived systems, meaning very large, sparse and implicitly defined systems. He had already come up with some neat tricks to efficiently deal with them, and I was asked to reimplement those in MATLAB and to think for myself if I had any ideas. Indeed, I did have some ideas, namely to apply a sequential quadratic programming (SQP) style approach to Simon's modified Gauss-Newton and modified iterative-LQR algorithms. These looked interesting enough on paper, that I was employed as a research assistant with the CRL for the next 3 months to finish my work on the subject. I needed to implement my methods in highly efficient C++ code so that they could be compared to the others. Sadly, I didn't catch a mistake that I made when setting up the framework for my code early enough. This meant that at the end my code was not very efficiently written, and any comparison was moot. Although, for me the interest in the project always laid in the neatness of the math, and less in the real-world performance of the algorithms.
 	</p>
