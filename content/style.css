@@ -62,6 +62,12 @@ sup {
 	top: 4px;
     right: 0px;
 }
+@media (max-width: 900px) {
+	.page_date {
+		position: static;
+		margin: -1.4em 0 1em 0;
+	}
+}
 
 .cv_table  {
 	margin: 0;
@@ -83,14 +89,11 @@ sup {
 }
 @media (max-width: 900px) {
 	.cv_table tr td:first-child {
-		width: 6em;
+		width: 5em;
+		padding-right: 0em;
 	}
 	.cv_table tr td p {
 		text-align: left;
-	}
-	.page_date {
-		position: static;
-		margin: -1.4em 0 1em 0;
 	}
 }
 
