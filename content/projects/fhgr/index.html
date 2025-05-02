@@ -10,7 +10,7 @@
 <body>
 	
 	<h1>FHGR Lectures (2023-2025)</h1>
-	<div class='page_date'>Created: 28.1.2024, Updated: 25.3.2025</div>
+	<div class='page_date'>Created: 28.1.2024, Updated: 2.5.2025</div>
 	
 	<p>
 	In a lucky coincidence and on short notice I managed to get a position as Lecturer at the University of Applied Sciences of the Grison (FHGR) in my hometown of Chur, Switzerland. This happened right after i saw myself forced to resign from my PhD position at the University of Groningen, Netherlands. 
@@ -96,7 +96,12 @@
 	
 	<h2>Robotics and automation (Spring semester 2025)</h2>
 	<p>
-		The lecture was tweaked to make the link between the 2D and 3D cases more apparent, the notation was changed to make it a bit less confusing (using XYZ for both cartesian coordinates and roll-pitch-yaw angles is not a smart decision), and a few mistakes in my notes were fixed. Otherwise, everything remained unchanged and the lectures went smoothly!
+		The lecture was tweaked to make the link between the 2D and 3D cases more apparent, the notation was changed to make it a bit less confusing (using XYZ for both cartesian coordinates and roll-pitch-yaw angles is not a smart decision), and a few mistakes in my notes were fixed. But the biggest change was the inclusion of a ROS2 tutorial for simulating the robot arm, and MoveIt2 to perform inverse kinematics and trajectory planning. This was done in response to popular demand to also learn how to use out-of-the-box software. FHGR is a university of <i>applied</i> sciences after all. The tutorial went trough practical instructions on how to use ROS, URDFs, RViz, MoveIt, and how to interface with them using python. It then culminated in a pick-and-place coding exercise.
+	</p>
+	<video controls loop><source src="ur5_ros_fk.mp4"></video>
+	<video controls loop><source src="ur5_ros_scene.mp4"></video>
+	<p>
+		By the way, I wouldn't recommend using MoveIt2 with python (MoveItPy). I found the bindings to the C++ source to be very incomplete and poorly documented as of spring 2025.
 	</p>
 	
 </body>
